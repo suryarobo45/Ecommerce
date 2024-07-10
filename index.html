@@ -1,0 +1,219 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Russo+One&family=Ysabeau+SC:wght@200;300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <!-- header -->
+        <section class="top-nav" id="myheader">
+            <nav class="container">
+                <div class="top-inner-nav">
+                    <div class="logo">Logo</div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <button class="sub-mit" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #000000;"></i></button>
+                    </div>
+                    <!-- navigation bar -->
+                    <div class="navs">
+                        <div class="nav-menu">
+                            <ul class="nav-items">
+                                <li><a href="signin.php" class="nav-link">Signin</a></li>
+                                <li><a href="login.php" class="nav-link">Logout</a></li>
+                                <li><a href="" class="nav-link">Gift</a></li>
+                                <li><a href="" class="nav-link">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping" id="cart-icon" style="color: #ffffff;"></i>
+                        <span class="quantity-count" data-quantity="0">0</span>
+
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <!-- cart -->
+                        <div class="cart">
+                            <h2 class="cart-title">My Cart</h2>
+                            <!-- cart content -->
+                            <div class="cart-content">
+                                <!-- <div class="cart-box"> -->
+                                <!-- <img class="cart-img" src="/images/silver.png" alt="">
+                                        <div class="dtl-box">
+                                            <div class="cart-product-title">Airdopes</div>
+                                            <div class="cart-price">$296.26</div>
+                                            <input type="number" value="1" class="cart-quantity">
+                                        </div>
+                                         removing cart
+                                        <i class="fa-solid fa-trash cart-remove" style="color: #ff1f1f;"></i> -->
+                                <!-- </div> -->
+                            </div>
+                            <!-- total -->
+                            <div class="total">
+                                <div class="total-head">Total</div>
+                                <div class="total-price">$0</div>
+                            </div>
+                            <!-- buy btn -->
+                            <button type="button" class="buy-btn">Buy Now</button>
+                            <!-- close cart -->
+                            <i class="fa-solid fa-xmark" id="close-cart" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <!-- category page -->
+        <section class="category-page">
+            <div class="container">
+                <div class="Cartegory">
+                    <div class="category-head">
+                        <h1>Shopping Categories</h1>
+                    </div>
+                </div>
+                <hr>
+                <!-- cards -->
+                <section class="item-gallery">
+                    <div class="flex-items">
+                        <div class="card">
+                            <div class="image-container">
+                                <img class="products ipad" src="./images/ipad.png" alt="Ipad">
+                            </div>
+                            <div class="prod-desc">
+                                <h1 class="product-title">Ipad pro</h1>
+                                <p class="price">$700</p>
+                                <p><button class="add-cart">Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <div class="card">
+                            <div class="image-container">
+                                <img class="products" src="./images/macbook.png" alt="MacBook">
+                            </div>
+                            <div class="prod-desc">
+                                <h1 class="product-title">MacBook pro</h1>
+                                <p class="price">$1810.89</p>
+                                <p><button class="add-cart">Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <div class="card">
+                            <div class="image-container">
+                                <img class="products" src="./images/apple12.png" alt="Iphone">
+                            </div>
+                            <div class="prod-desc">
+                                <h1 class="product-title">Iphone 12pro</h1>
+                                <p class="price">$1200</p>
+                                <p><button class="add-cart">Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <div class="card">
+                            <div class="image-container">
+                                <img class="products" src="./images/AppleWatch.png" alt="Apple-Watch">
+                            </div>
+                            <div class="prod-desc">
+                                <h1 class="product-title">Apple Watch</h1>
+                                <p class="price">$450.69</p>
+                                <p><button class="add-cart">Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="item-gallery">
+                    <div class="flex-items">
+                        <div class="card">
+                            <div class="image-container">
+                                <img class="products" src="./images/airpods.png" alt="Ipad">
+                            </div>
+                            <div class="prod-desc">
+                                <h1 class="product-title">AirPods</h1>
+                                <p class="price">$296</p>
+                                <p><button class="add-cart">Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <div class="card">
+                            <div class="image-container">
+                                <img class="products" src="./images/imac.png" alt="MacBook">
+                            </div>
+                            <div class="prod-desc">
+                                <h1 class="product-title">1Mac M2</h1>
+                                <p class="price">$2250</p>
+                                <p><button class="add-cart">Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <div class="card">
+                            <div class="image-container">
+                                <img class="products" src="./images/silver.png" alt="Iphone">
+                            </div>
+                            <div class="prod-desc">
+                                <h1 class="product-title">Airpods Pro</h1>
+                                <p class="price">$500</p>
+                                <p><button class="add-cart">Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-items">
+                        <div class="card">
+                            <div class="image-container">
+                                <img class="products" src="./images/MacMini.png" alt="Apple-Watch">
+                            </div>
+                            <div class="prod-desc">
+                                <h1 class="product-title">Mac Mini</h1>
+                                <p class="price">$1250</p>
+                                <p><button class="add-cart">Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- footer -->
+        <section class="bot-nav">
+            <div class="container">
+                <div class="bot-inner-nav">
+                    <ul class="nav-list">
+                        <li>Service</li>
+                        <li>About</li>
+                        <li>Clients</li>
+                        <li>Contact</li>
+                        <div class="social-icon">
+                            <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="copyrigt">&copy; All Rights</div>
+    </footer>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
